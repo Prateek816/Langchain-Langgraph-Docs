@@ -48,6 +48,7 @@ res = with_message_history.invoke([
     HumanMessage(content="Hello , my name is Prateek Rastogi")],
     config = config
 )
+print(store["chat1"])
 res = with_message_history.invoke([
     HumanMessage(content="What is my name")],
     config = config
