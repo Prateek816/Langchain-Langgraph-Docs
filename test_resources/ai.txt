@@ -1,0 +1,13 @@
+Artificial intelligence is a broad field of computer science concerned with creating machines that can perform tasks which normally require human intelligence. These tasks include reasoning, learning from experience, understanding language, recognizing patterns, and making decisions under uncertainty. The term artificial intelligence does not describe a single technology, but rather a collection of methods and approaches.
+
+In the early days of artificial intelligence research, systems were largely rule-based. Engineers attempted to encode human knowledge directly into programs using logical rules and symbolic representations. While this approach worked for narrow problems, it failed when systems were exposed to real-world complexity and ambiguity.
+
+Machine learning emerged as a response to these limitations. Machine learning is a subset of artificial intelligence that enables systems to learn from data instead of relying on explicitly programmed rules. By analyzing large datasets, machine learning models identify patterns and make predictions. The more data they are exposed to, the better their performance typically becomes.
+
+Deep learning is a specialized form of machine learning that uses artificial neural networks with many layers. These deep neural networks are inspired by the structure of the human brain, although they are far simpler in practice. Deep learning has proven especially effective for tasks such as image recognition, speech processing, and natural language understanding.
+
+It is common for people to confuse artificial intelligence, machine learning, and deep learning. Artificial intelligence is the overarching concept. Machine learning is one of the primary techniques used to achieve artificial intelligence. Deep learning is a method within machine learning. Not all artificial intelligence systems use machine learning, and not all machine learning systems rely on deep learning.
+
+Modern artificial intelligence applications are widespread. Recommendation systems suggest movies, music, and products. Autonomous vehicles use artificial intelligence to perceive their surroundings and make driving decisions. In healthcare, artificial intelligence assists in medical imaging, diagnosis, and drug discovery.
+
+Despite its successes, artificial intelligence has limitations. Models can inherit biases from the data they are trained on. They may perform well in controlled environments but fail in unfamiliar situations. Ethical concerns related to privacy, accountability, and job displacement have become increasingly important as artificial intelligence systems are deployed at scale.
