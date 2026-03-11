@@ -5,7 +5,10 @@ nd output of models, carrying both the content and metadata needed to represent 
 #Basic Usage ->
 from langchain.chat_models import init_chat_model
 from langchain.messages import HumanMessage, AIMessage, SystemMessage
-model = init_chat_model("gpt-5-nano")
+import os
+from dotenv import load_dotenv
+load_dotenv()
+model = init_chat_model("openai/gpt-oss-120b", model_provider="groq", temperature=0.1)
 system_msg = SystemMessage("You are a helpful assistant.")
 human_msg = HumanMessage("Hello, how are you?")
 # Use with chat models
@@ -30,7 +33,7 @@ human_msg = HumanMessage(
 #An AIMessage represents the output of a model invocation. They can include multimodal data, tool calls, and provider-specific metadata that you can later access.
 
 response = model.invoke("Explain AI")
-print(type(response))  # <class 'langchain.messages.AIMessage'>
+print(response)  # <class 'langchain.messages.AIMessage'>
 
 """----------------------------------------------------------------------"""
 

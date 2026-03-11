@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+\setstretch{1.15}
+\setlength{\parindent}{0pt}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Weekend of Code 9.0}}\\
+    \vspace{4pt}
+    {\large \textbf{DevJam Abstract}}\\
+    \vspace{6pt}
+    \textbf{Team: CampusCore}
+\end{center}
+
+\vspace{10pt}
+
+\section*{Team Members}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Prateek Rastogi (Team Leader)} — 20253202, CSE, GitHub: Prateek816
+    \item \textbf{Prachi Maurya} — 20253193, CSE , Github : anitasvijay1577-web
+    \item \textbf{Om Upadhyay} — 20253181, CSE, GitHub: omupadhyay1
+    \item \textbf{Ankur Gupta} — 20253046, CSE, GitHub: Ankur806050
+\end{itemize}
+
+\section*{Project Title}
+
+\textbf{Fate Breakers: A Campus Civic Issue Management System}
+
+\section*{Problem Statement}
+
+Large academic institutions such as MNNIT face recurring civic issues including damaged infrastructure, sanitation problems, faulty electrical systems, and water supply failures. These issues are often reported through informal channels such as word-of-mouth or messaging groups, resulting in poor visibility, delayed action, and lack of accountability. Students have no reliable way to track complaint status, while administrators lack a centralized overview of campus-wide issues.
+
+The absence of a structured reporting and monitoring mechanism leads to repeated complaints, inefficient prioritization, and dissatisfaction among stakeholders. A centralized, transparent, and role-based digital system is required to streamline the reporting, tracking, and resolution of campus civic issues.
+
+\section*{Objectives}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item To provide a centralized digital platform for reporting campus civic issues.
+    \item To enable students to submit structured complaints with descriptions and visual evidence.
+    \item To allow administrators to monitor, prioritize, and resolve complaints efficiently.
+    \item To ensure transparency through real-time complaint status updates.
+    \item To maintain a history of resolved and unresolved issues for accountability.
+\end{itemize}
+
+\section*{Proposed Solution}
+
+\textbf{Fate Breakers} is a web-based civic issue management system designed specifically for college campuses. Authenticated students can submit complaints by providing a title, detailed description, and optional image evidence. Each complaint is timestamped and stored in a centralized database.
+
+Administrators are provided with a dedicated dashboard that displays all submitted complaints along with their current status. Complaints can be filtered, reviewed, and marked as resolved once appropriate action has been taken. This structured workflow ensures that issues are addressed systematically rather than being overlooked.
+
+\section*{Current System Features}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Student Complaint Submission:} Secure submission of civic issues by authenticated students.
+    \item \textbf{Complaint Status Tracking:} Complaints are marked as pending or resolved with timestamps.
+    \item \textbf{Administrative Dashboard:} Centralized interface for administrators to manage complaints.
+    \item \textbf{Upvoting Mechanism:} Students can upvote issues to indicate urgency and priority.
+    \item \textbf{Role-Based Access Control:} Separate access privileges for students and administrators.
+\end{itemize}
+
+\section*{Technology Stack}
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Frontend:} HTML, CSS, JavaScript , Google Map API
+    \item \textbf{Backend:} FastAPI and Python
+    \item \textbf{Authentication:} Firebase Authentication
+    \item \textbf{Database:} SQLite
+\end{itemize}
+
+
+\end{document}

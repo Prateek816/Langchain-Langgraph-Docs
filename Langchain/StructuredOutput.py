@@ -14,4 +14,4 @@ model = init_chat_model(
 )
 model_with_structure = model.with_structured_output(MovieInfo)
 response = model_with_structure.invoke("Provide information about the movie Inception.")
-print(response)  
+print(response["title"])  
