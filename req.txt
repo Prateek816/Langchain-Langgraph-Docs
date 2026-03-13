@@ -8,3 +8,4 @@ langchain_tavily
 dotenv
 IPython
 ipykernel
+colorama

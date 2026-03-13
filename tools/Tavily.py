@@ -17,5 +17,6 @@ tavily_tool = TavilySearch(
     include_raw_content=True,
 )
 
-response = tavily_tool.invoke({"query": "Recent news of India"})
-print(response)
+response = tavily_tool.invoke({"query": "I want to Learn Python"})
+for key , value in response.items():
+    print(key)
