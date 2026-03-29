@@ -1,0 +1,16 @@
+"unstructured[all-docs]" 
+pillow lxml pillow
+chromadb tiktoken
+langchain langchain-community langchain-openai langchain-groq
+python_dotenv
+unstructured
+pdfminer.six==20221105
+unstructured_inference
+pi_heif
+pdf2image
+
+unstructured-client
+watermark
+fastembed
+
+fitz

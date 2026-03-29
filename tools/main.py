@@ -4,7 +4,7 @@
 #3. Using the Tool.from_function method
 
 from langchain.tools import tool , BaseTool
-
+from langgraph.prebuilt import create_react_agent
 @tool("adding") 
 def add_numbers(a: int, b: int) -> int:
     """Adds two numbers together."""
@@ -76,15 +76,14 @@ def multiply(a:int , b:int)->int:
     "Given two number a and b this tools returns their product"
     return a*b
 response = model.invoke("What is the product of 6 and 7?")
-print(response.content)
 
 @tool
 def prateek_info()->str:
     "Who is Prateek Rastogi"
     return """Prateek Rastogi is a software engineer with 5 years of experience in full-stack development. He specializes in building scalable web applications and has a strong background in Python and JavaScript."""
-model = model.bind_tools([multiply, prateek_info])
+model = create_react_agent(model, tools=[multiply, prateek_info], debug=True)
 response = model.invoke("Who is Prateek Rastogi")
-print(response.tool_calls[0])
+print(response)
 
 """---------------------------------"""
 
