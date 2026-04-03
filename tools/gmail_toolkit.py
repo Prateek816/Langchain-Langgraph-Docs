@@ -15,7 +15,7 @@ from langchain_community.agent_toolkits import GmailToolkit
 # 1. Use get_google_credentials
 credentials = get_google_credentials(
     token_file="token.json",
-    scopes=["https://mail.google.com/"],
+    scopes=["https://mail.google.com/","https://www.googleapis.com/auth/calendar"],
     client_secrets_file="credentials.json",
 )
 
