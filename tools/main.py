@@ -43,7 +43,7 @@ class MultiplyTool(BaseTool):
 multiply_tool = MultiplyTool()
 response = multiply_tool.invoke({"a": 5, "b": 10})
 print(f"Result of multiplying numbers: {response}")
-print(multiply_tool.description)
+print(multiply_tool)
 print(multiply_tool.name)
 print(multiply_tool.model_json_schema)
 
