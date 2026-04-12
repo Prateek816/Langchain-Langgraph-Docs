@@ -1,3 +1,4 @@
 .env
 .venv
 test
+my_chroma_db
