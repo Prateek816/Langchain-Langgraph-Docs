@@ -50,10 +50,11 @@ for doc, emb, ids in zip(data['documents'], data['embeddings'],data['ids']):
 #Semantic Search
 semantic_results = collection.query(
     query_texts=["Vehicle which run on no fuel"],
-    n_results=1,
+    n_results=2,
     include=["documents", "metadatas"],
     #where={"type": "car"}
 )
+print(len(semantic_results))
 #lesser the cosine similary score, more similar the document is to the query. So, the document with the lowest cosine similarity score will be considered the most relevant result for the query.
 print("Semantic search results:")
 for doc, meta in zip(semantic_results['documents'], semantic_results['metadatas']):
